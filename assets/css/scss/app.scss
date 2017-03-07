@@ -1,6 +1,11 @@
 body {
     background-color: #231f20;
 }
+a {
+    &:hover {
+        color: #f59b07;
+    }
+}
 
 // title
 h1.title {
@@ -15,17 +20,23 @@ h1.title {
     background-color: #2b2b2b;
     border: 2px solid #FFF;
     border-radius: 0px;
+    color: #FFF;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
     &:hover {
-        background-color: #FFF;
-        color: #2b2b2b;
+        background-color: #f59b07;
+        color: #FFF;
     }
 }
 .btn-viewmore {
 	color: #FFF;
 	font-weight: bold;
 	font-size: 16px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
 	&:hover {
 		color: #FFF;
+        background-color: #f59b07;
 	}
 }
 
@@ -91,14 +102,14 @@ h1.title {
 .hovereffect a.info {
     display: inline-block;
     text-decoration: none;
-    padding: 7px 14px;
-    text-transform: uppercase;
+    padding: 5px 10px;
     color: #fff;
     background-color: #2b2b2b;
     border: 2px solid #fff;
-    margin: 20px 0 0 0;
+    margin: 25px 0 0 0;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    font-size: 12px;
 }
 
 .hovereffect:hover img {
@@ -128,6 +139,11 @@ h1.title {
 // end
 .navbar-default .navbar-nav>li>a {
     color: #FFF;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: #f59b07;
+    }
 }
 
 .carousel {
@@ -155,6 +171,7 @@ h1.title {
 .navbar-custom.affix {
     background-color: #231f20;
     padding: 27px 0px;
+    box-shadow: 0px 5px 11px #000;
 }
 
 .navbar-right {
@@ -178,19 +195,21 @@ h1.title {
 p.max-w {
 	max-width: 750px;
 	margin: 0 auto;
+    padding: 40px 0px 70px 0px;
 }
 
 
 
 // our service
 .our-service {
-	background-image: url(../../images/bamboo-bg-left.jpg), url(../../images/bamboo-bg-right.jpg);
-    background-position: right top, left top;
-    background-repeat: no-repeat, no-repeat;
-    background-size: auto 100%, auto 100%;
+	background-image:  url(../../images/bamboo-bg-left.jpg), 
+        url(../../images/bamboo-bg-right.jpg), 
+        url(../../images/ourservice-bg.jpg);
+    background-position: right top, left top, center top;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto 100%, auto 100%, 70% 100%;
     padding-bottom: 70px;
 }
-
 
 
 
@@ -204,7 +223,29 @@ p.max-w {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
+    &> .logo-footer {
+        margin: 0 auto;
+        padding-top: 60px;
+    }
+    &> .navbar-footer {
+        padding-top: 75px;
+
+        &> li>a {
+            color: #FFF;
+            padding: 0px 35px;
+            -webkit-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+
+            &:hover {
+                color: #f59b07;
+                text-decoration: none;
+            }
+        }
+    }
 }
+
+
 
 .copyright {
     background-color: #FFF;
@@ -218,16 +259,23 @@ p.max-w {
 }
 
 @media (min-width: 768px) {
-    .navbar-nav>li>a {}
+    .navbar-nav>li>a {
+        padding-right: 30px;
+    }
     header {
         position: relative;
         .intro-text {
             position: absolute;
-            top: 35%;
+            top: 42%;
             min-width: 1366px;
             font-size: 60px;
             color: #FFF;
             font-weight: bold;
         }
+    }
+    .navbar > .container .navbar-brand {
+        margin: 0px;
+        margin-top: -30px;
+        margin-left: 30px;
     }
 }
