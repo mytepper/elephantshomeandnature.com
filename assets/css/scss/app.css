@@ -1,6 +1,5 @@
 body {
-  background-color: #231f20;
-  overflow-x: hidden; }
+  background-color: #231f20; }
 
 a:hover {
   color: #f59b07; }
@@ -10,29 +9,6 @@ h1.title {
   font-weight: bold;
   color: #FFF;
   padding: 90px 0px 40px 0px; }
-
-header {
-  position: relative; }
-  header .intro-text {
-    position: absolute;
-    top: 42%;
-    width: 100%;
-    font-size: 3.5vh;
-    color: #FFF;
-    font-weight: bold; }
-
-.container {
-  position: relative; }
-
-.header {
-  height: 793px;
-  color: #fff;
-  text-align: center;
-  background: url(../../images/slide1.jpg) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; }
 
 .btn-dbwhite {
   background-color: #2b2b2b;
@@ -68,12 +44,6 @@ header {
   color: #f59b07; }
 .caption > p {
   color: #FFF; }
-
-.navbar-default .navbar-toggle {
-  border-radius: 0px; }
-
-.navbar-default .navbar-collapse {
-  border: 0px; }
 
 .hovereffect {
   width: 100%;
@@ -186,12 +156,13 @@ header {
   -o-background-size: cover; }
 
 p.max-w {
+  max-width: 750px;
   margin: 0 auto;
   padding: 40px 0px 70px 0px; }
 
 .our-service {
   background-image: url(../../images/bamboo-bg-left.jpg), url(../../images/bamboo-bg-right.jpg), url(../../images/ourservice-bg.jpg);
-  background-position: left top, right top, center top;
+  background-position: right top, left top, center top;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: auto 100%, auto 100%, 70% 100%;
   padding-bottom: 70px; }
@@ -223,75 +194,26 @@ p.max-w {
   background-color: #FFF;
   padding: 25px 0px 15px 0px; }
 
-@media (max-width: 1200px) {
-  .navbar-header {
-    float: none; }
-
-  .navbar-toggle {
-    display: block; }
-
-  .navbar-collapse {
-    border-top: 1px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
-
-  .navbar-collapse.collapse {
-    display: none !important; }
-
-  .navbar-nav {
-    float: none !important; }
-
-  .navbar-toggle {
-    background-color: #ffffff; }
-
-  .navbar-nav > li {
-    float: none; }
-
-  .navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center; }
-
-  .collapse.in {
-    display: block !important; }
-
-  .container {
-    padding-right: 0px;
-    padding-left: 0px; }
-
-  .navbar > .container .navbar-brand {
-    margin: 0px;
-    margin-top: -20px;
-    margin-left: 25px; } }
-@media (max-width: 1025px) {
-  .navbar-custom {
-    padding: 15px 0px; }
-
-  .our-service {
-    background-image: url(../../images/ourservice-bg.jpg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: 100% 100%; }
-
-  .header {
-    height: 100vh; } }
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .container {
     width: 1366px; } }
-@media (min-width: 1280px) {
-  header .intro-text {
-    font-size: 65px; }
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-right: 30px; }
 
-  p.max-w {
-    max-width: 750px;
-    margin: 0 auto;
-    padding: 40px 0px 70px 0px; }
+  header {
+    position: relative; }
+    header .intro-text {
+      position: absolute;
+      top: 42%;
+      min-width: 1366px;
+      font-size: 60px;
+      color: #FFF;
+      font-weight: bold; }
 
   .navbar > .container .navbar-brand {
     margin: 0px;
     margin-top: -30px;
     margin-left: 30px; } }
-@media (min-width: 768px) {
-  .navbar-nav > li > a {
-    padding-right: 30px; } }
 
 /*# sourceMappingURL=app.css.map */
