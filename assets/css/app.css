@@ -31,11 +31,33 @@ header {
     top: 42%;
     width: 100%; }
 
+.contant-mixh {
+  margin: 30px 0px;
+  max-height: 230px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative; }
+  .contant-mixh::-webkit-scrollbar {
+    width: 0.5em;
+    border-radius: 40px; }
+  .contant-mixh::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #d2d2d2; }
+  .contant-mixh::-webkit-scrollbar-thumb {
+    background-color: #040707;
+    border-radius: 40px; }
+  .contant-mixh::-webkit-scrollbar-track-piece {
+    background-color: #d2d2d2;
+    border-radius: 40px; }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
   background-color: transparent;
   color: #F59B07; }
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px; }
 
 .container {
   position: relative; }
@@ -106,10 +128,6 @@ header {
   background-color: transparent;
   border: 0px;
   border-radius: 0px; }
-
-.thumbnail a > img,
-.thumbnail > img {
-  width: 205px; }
 
 .caption > h4 {
   color: #F59B07; }
@@ -286,7 +304,7 @@ p.max-w {
   background-image: url(../../images/bamboo-bg-left.jpg), url(../../images/bamboo-bg-right.jpg), url(../../images/ourservice-bg.jpg);
   background-position: left top, right top, center top;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 15% 100%, 15% 100%, 80% 100%;
+  background-size: 10% 100%, 10% 100%, 95% 100%;
   padding-bottom: 70px; }
 
 .footer {
@@ -347,7 +365,7 @@ span.span-clr {
   background-image: url(../../images/bamboo-bg-left.jpg), url(../../images/bamboo-bg-right.jpg);
   background-position: left top, right top;
   background-repeat: no-repeat, no-repeat;
-  background-size: 15% 100%, 15% 100%;
+  background-size: 10% 100%, 10% 100%;
   padding-bottom: 70px; }
 
 p.p-clr {
@@ -452,7 +470,8 @@ div.upload input {
     padding-right: 0px;
     padding-left: 0px; }
 
-  .navbar > .container .navbar-brand {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
     margin: 0px;
     margin-top: -20px;
     margin-left: 25px; } }
@@ -479,6 +498,9 @@ div.upload input {
   p.tel,
   p.email {
     font-size: 18px; } }
+@media (min-width: 2047px) {
+  .container {
+    width: 2048px; } }
 @media (min-width: 1300px) {
   .container {
     width: 1366px; } }
@@ -491,7 +513,8 @@ div.upload input {
     margin: 0 auto;
     padding: 40px 0px 70px 0px; }
 
-  .navbar > .container .navbar-brand {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
     margin: 0px;
     margin-top: -30px;
     margin-left: 30px; } }
